@@ -22,7 +22,7 @@ public class ApiFailureInterceptor implements Interceptor {
 
         Response response = chain.proceed(request);
 
-        if (isApiSuccess(response.code())) {
+        if (!isApiSuccess(response.code())) {
             logApiFailure(response.request().url().toString(), response.code());
         }
 
