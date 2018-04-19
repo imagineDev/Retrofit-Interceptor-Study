@@ -1,4 +1,3 @@
-package com.mmi.maps.api.bean;
 
 import android.util.Log;
 
