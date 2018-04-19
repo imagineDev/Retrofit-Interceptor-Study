@@ -23,15 +23,15 @@ How to add interceptor:
    
 2. Attach interceptor to the client's builder 
 
-  `httpClientBuilder.addInterceptor(new YourInterceptorClass());`
+   `httpClientBuilder.addInterceptor(new YourInterceptorClass());`
   
 3. Build OkHttpCLient
 
-  `OkHttpClient httpClient = httpClientBuilder.build();`
+   `OkHttpClient httpClient = httpClientBuilder.build();`
   
 4. Initialize Retrofit
 
-  `Retrofit retrofit = getRetrofitBuilder().client(httpClient).build();`
+   `Retrofit retrofit = getRetrofitBuilder().client(httpClient).build();`
   
   
 Note: 
